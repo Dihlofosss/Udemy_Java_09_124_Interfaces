@@ -52,8 +52,8 @@ public class Player implements ISaveable
 			return;
 		}
 		
-		hp = (int) list.get(1);
-		armor = (int) list.get(2);
+		hp = Integer.parseInt(list.get(1).toString());
+		armor = Integer.parseInt(list.get(2).toString());
 		primaryWeapon = (String) list.get(3);
 		secondaryWeapon = (String) list.get(4);
 	}
